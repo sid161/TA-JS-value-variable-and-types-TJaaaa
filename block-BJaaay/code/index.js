@@ -22,16 +22,18 @@ for(i=1;i<=10;i=i+1){
 }
 
 // Calculate the sum of all numbers from 1 to 10.
-for(i=1;i=10;i=i+1){
-    sum =;
-    console.log(i);
-    
+let sum = 0
+for(i=1; i<=10; i=i+1){
+    sum += i;
+
 }
+    console.log(sum);
+    
 
 // Log all the values from 1 to 10 using while loop
 
 let i = 1;
 while (i<10) {
     console.log(i);
-    i= i+1;
+    i++;
 }
