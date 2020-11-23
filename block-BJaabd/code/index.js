@@ -10,6 +10,18 @@ Write a program that asks the user his/her age and check for the following condi
 - `if` the age is greater than 55 then print the message " You are too old to participate in the marthon".
 👇
 */
+let age = prompt("Enter your age");
+if (age>=12 && age<=55){
+  alert("you can participate in marathon");
+} else if(age>=4 && age<=11){
+  alert("you are too young");
+} else if(age>4){
+  alert("Hey kiddo can you walk");
+} else if(age<55){
+  alert("you are too old");
+} else{
+  alert("invalid");
+}
 
 // Loops
 /*
@@ -20,12 +32,25 @@ n = 1 => output: hello
 n = 7 => output: heeeeeeello
 👇
 */
+let n = prompt("Enter the word");
+
 // [Your code goes here]
 
 /*
 Program to calculate the sum of first n natural numbers(1,2,3...n are known as natural numbers). Prompt user to enter n (using `prompt`) then based on input provided calculate and show result in `alert`.
 👇
 */
+const number = parseInt(prompt('Enter a positive integer: '));
+
+let sum = 0;
+
+// looping from i = 1 to number
+// in each iteration, i is increased by 1
+for (let i = 1; i <= number; i++) {
+    sum += i;
+}
+
+console.log('The sum of natural numbers:', sum);
 // [Your code goes here]
 
 /* Switch Statement
@@ -67,6 +92,14 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
  🎖Write a JavaScript program that takes two `integers` from user (using prompt) and alerts the larger number.
 */
 // [your code goes here]
+let int1 = prompt("Enter integer 1");
+let int2 = prompt("Enter integer 2");
+
+if(int1>int2){
+  alert(`${int1} is greater`);
+} else{
+  alert(`${int2} is greater`);
+}
 
 /*
 🎖Write a JavaScript conditional statement to find the sign (+, -) of product of three numbers. Take those three numbers from user using `prompt`. Display an alert box with the specified sign.
