@@ -6,7 +6,7 @@
   - `if` the number is even print the message " number is even"
   - `if` the number is odd print the message "number is odd"
 */
-let number = prompt("Enter a number");
+let number = Number(prompt("Enter a number"));
 if(number%2==0){
   alert("number is even");
 }
@@ -17,14 +17,19 @@ if(number%2!==0){
 }
 
 // 2. Write a program to accept two numbers from user using`prompt` and alert the max value.
-var first = Number(prompt('Enter first number')); 
-var second = Number(prompt('Enter second number')); 
+let numA = prompt("Enter numA");
+let numB = prompt("Enter numB ");
 
-console.log(largest(first, second));
+if(numA> numB){
+  alert(`${numA} is greater `);
+} else{
+  alert(`${numB} is greater`);
+}
 
 // 3. Convert the above code using`?` terniary operator
-
+  numA > numB ? alert(`${numA} is greater`) : alert(`${numB} is greater`);
 /*
+
 4. Write a program that asks the user for the house name and check the following conditions:
 
   - `if` house name is "stark" then print the message " Winter is coming"
@@ -32,10 +37,10 @@ console.log(largest(first, second));
   - `else` print the message " All men must die"
 */
 let housename = prompt("Enter your house name");
-if(housename == "stark"){
+if(housename === "stark"){
   console.log("Winter is coming");
 }
-else if(housename == "lannister"){
+else if(housename === "lannister"){
   console.log("A lannister always pay his debt");
 }
 else{
@@ -43,6 +48,7 @@ else{
 }
 
 // 5. Convert the above code using`?` terniary operator
+housename === "stark" ? alert("Winter is coming") : housename === "lannister" ? alert("lannister always pay his debt") :
 
 // Switch
 
@@ -51,28 +57,40 @@ let month = prompt("Enter no of month");
 switch(month){
   case 1:
     alert("31 days");
+    break;
   case 2:
     alert("28 days");
+    break;
   case 3:
     alert("31 days");
+    break;
   case 4:
     alert("30 days");
+    break;
     case 5:
       alert("31 days");
+      break;
     case 6:
       alert("30 days");
+      break;
     case 7:
       alert("31 days");
+      break;
     case 8:
       alert("31 days");
+      break;
       case 9:
         alert("30 days");
+        break;
       case 10:
         alert("31 days");
+        break;
       case 11:
         alert("30 days");
+        break;
       case 12:
         alert("31 days");
+        break;
 }
 
 
@@ -83,9 +101,23 @@ switch(month){
   - `Salary > 50000` tax is 30 %
 
 */
-let salery = prompt{"enter  ur salary"};
-if (salery<= 20000){
-  alert("your inhand salery is 1800")
+let salary = prompt{"enter  ur salary"};
+switch (true){
+  case salary <=20000:
+    let tax = (salary * 10)/ 100;
+    alert(`your in-hand amount ${salary - tax}`);
+
+   case salary <=40000:
+    let tax = (salary * 20)/ 100;
+    alert(`your in-hand amount ${salary - tax}`);
+
+    case salary <=50000:
+      let tax = (salary * 30)/100;
+      alert(`your in-hand amount ${salary - tax}`);
+
+      default:
+        alert(`invalid value`);
+
 }
 
 //  if..else vs switch
@@ -123,7 +155,7 @@ else{
 let marks=100;
 let marks=prompt("Enter number");
 
-switch(marks){
+switch(true){
   case (marks>100):
     alert("wrong input");
   break;
