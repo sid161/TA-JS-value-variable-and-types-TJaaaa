@@ -12,15 +12,15 @@ console.log(user);
 console.log(userName);
 let age=22;
 let isLearning=true;
-let user = John;
+ user = "John";
 console.log(user);
 console.log(userName);
 
 /* 2.
 Use `prompt` to take two numbers from user and store it in variable `numA` and `numB`. Create a third variable called `sum`, using `+` operator add numA and numB , store it in varible `sum` and using alert display `sum` in browser.
 */
-let numA = prompt("Enter first number");
-let numB = prompt("Enter second number");
+let numA = +prompt("Enter first number");
+let numB = +prompt("Enter second number");
 let sum = (`${numA} + ${numB}`);
 alert(`${sum}`);
 // Loops
@@ -33,16 +33,32 @@ if(j%2 === 0){
 }
 
 // 4. Print the odd numbers from 9 to 1 (both inclusive) using a for loop.
-for(i=9; i<=9; i--)
+for(let i=9; i >= 1; i++)
 if(i%2 !== 0){
     console.log(i);
     i=1;
 }
 
 // 5. Concat all the numbers from 5 to 0 (both inclusive) in descending order using a while loop. (543210)
+    let finalString = "";
+    let initialValue = 5;
+
+    while(initialValue >= 0){
+        finalString += initialValue;
+        initialValue--;
+    }
+    console.log(finalString);
 
 // 6. Concat all the even numbers from 10 to 0 (both inclusive) in descending order using a while loop. (1086420)
+    let finalEvenString = "";
+    let initialEvenValue = 10;
 
+    while(initialEvenvalue >= 0){
+        if (initialEvenValue %2 === 0){
+            finalEvenString += initialEvenValue;
+        }
+        initialEvenValue--;
+    }
 // Comparisoin
 
 /* 7. Take two value using prompt and store them in variables `num1` and `num2`. Check whether they are equal or not.
@@ -50,10 +66,17 @@ if(i%2 !== 0){
 - `alert` true or false base on the entered value.
 - if the input value is anything like `true`, `null` or `undefined` alert saying `Enter a valid value`.
 
-
 Example:
 
 21, 21; // true
 "hello", -21; // false
 
 */
+let num1 = prompt("Enter 1st value");
+let num2 = prompt("Enter second value");
+
+if(isNaN(num1) || isNaN(num2)){
+    alert(`Enter valid value`);
+} else{
+    alert(num1 == num2);
+}
