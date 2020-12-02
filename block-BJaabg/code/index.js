@@ -28,7 +28,7 @@ let taxedAmount = amount + tax;
 console.log( `$${amount + tax}`);
 
 if (taxedAmount < bank_balance){
-    console.log("you can afford it");
+    console.log("you can afford it easily");
 
 }
 else {
