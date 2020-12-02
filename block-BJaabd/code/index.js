@@ -22,6 +22,7 @@ if (age>=12 && age<=55){
 } else{
   alert("invalid");
 }
+}
 
 // Loops
 /*
@@ -192,22 +193,22 @@ if(product > 0){
 */
 
 // [Your code goes here]
-let firstNum = +prompt("Enter first value for operation");
+let firstNumber = +prompt("Enter first value for operation");
 let secondNum = +prompt("Enter second value for operation");
 let thirdNum = +prompt("Enter operation out (add,subtract,multiply,divide)");
 
 switch(operation){
   case "add":
-    alert(`the sum of ${firstNum} and ${secondNum} is ${firstNum + secondNum}`);
+    alert(`the sum of ${firstNumber} and ${secondNum} is ${firstNumber + secondNum}`);
     break;
     case "subtract":
-      alert(`the difference of ${firstNum} and ${secondNum} is ${firstNum - secondNum}`);
+      alert(`the difference of ${firstNumber} and ${secondNum} is ${firstNumber - secondNum}`);
       break;
       case "multiply":
-        alert(`the product of ${firstNum} and ${secondNum} is ${firstNum * secondNum}`);
+        alert(`the product of ${firstNumber} and ${secondNum} is ${firstNumber * secondNum}`);
         break;
         case "divide":
-          alert(`the divide of ${firstNum} and ${secondNum} is ${firstNum / secondNum}`);
+          alert(`the divide of ${firstNumber} and ${secondNum} is ${firstNumber / secondNum}`);
           break;
 }
 
