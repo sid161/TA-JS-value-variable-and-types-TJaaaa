@@ -101,7 +101,7 @@ switch(month){
   - `Salary > 50000` tax is 30 %
 
 */
-let salary = prompt{"enter  ur salary"};
+let salary = prompt("enter  ur salary");
 switch (true){
   case salary <=20000:
     let tax = (salary * 10)/ 100;
