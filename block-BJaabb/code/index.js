@@ -10,8 +10,7 @@ console.log(user);
 let userName = user;
 console.log(user);
 console.log(userName);
-let age=22;
-let isLearning=true;
+let age=22; isLearning=true;
  user = "John";
 console.log(user);
 console.log(userName);
@@ -33,7 +32,7 @@ if(j%2 === 0){
 }
 
 // 4. Print the odd numbers from 9 to 1 (both inclusive) using a for loop.
-for(let i=9; i >= 1; i++)
+for(let i=9; i >= 1; i--)
 if(i%2 !== 0){
     console.log(i);
     i=1;
