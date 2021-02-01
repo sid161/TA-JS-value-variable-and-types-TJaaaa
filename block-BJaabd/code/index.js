@@ -21,8 +21,8 @@ if (age>=12 && age<=55){
   alert("you are too old");
 } else{
   alert("invalid");
-}
-}
+};
+
 
 // Loops
 /*
