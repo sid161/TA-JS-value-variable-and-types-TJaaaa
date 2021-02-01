@@ -7,15 +7,11 @@
   - `if` the number is odd print the message "number is odd"
 */
 let number = Number(prompt("Enter a number"));
-if(number%2==0){
-  alert("number is even");
+if(number % 2 == 0){
+  console.log("number is even");
+} else {
+  console.log("number is odd");
 }
-
-let number = prompt("Enter a number");
-if(number%2!==0){
-  alert("number is odd");
-}
-
 // 2. Write a program to accept two numbers from user using`prompt` and alert the max value.
 let numA = prompt("Enter numA");
 let numB = prompt("Enter numB ");
@@ -53,7 +49,7 @@ housename === "stark" ? alert("Winter is coming") : housename === "lannister" ? 
 // Switch
 
 // 6. Write a program that takes the number of the month(1 - 12) and alert number of days in the month.
-let month = prompt("Enter no of month");
+let month = Number(prompt("Enter no of month"));
 switch(month){
   case 1:
     alert("31 days");
